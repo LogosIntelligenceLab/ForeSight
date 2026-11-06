@@ -1,0 +1,3 @@
+recursive-include navsim *.yaml *.yml
+include LICENSE.md
+recursive-include LICENSES *.txt *.md

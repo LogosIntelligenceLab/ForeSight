@@ -1,0 +1,30 @@
+"""Native 5 Hz Epona architecture for NuPlan front-camera generation."""
+
+image_size = (512, 1024)
+vae_embed_dim = 32
+downsample_size = 32
+patch_size = 1
+add_encoder_temporal = False
+add_decoder_temporal = True
+temporal_patch_size = 6
+condition_frames = 1
+pkeep = 0.7
+n_layer = [12, 6, 6]
+n_head = 16
+n_embd = 2048
+pose_x_vocab_size = 128
+pose_y_vocab_size = 128
+yaw_vocab_size = 512
+pose_x_bound = 50
+pose_y_bound = 10
+yaw_bound = 12
+block_size = 1
+n_embd_dit = 2048
+n_head_dit = 16
+axes_dim_dit = [16, 56, 56]
+traj_len = 15
+n_layer_traj = [1, 1]
+n_embd_dit_traj = 1024
+n_head_dit_traj = 8
+axes_dim_dit_traj = [16, 56, 56]
+lambda_yaw_pose = 1.0
