@@ -36,6 +36,18 @@ ForeSight studies planning through imagined futures. A foundation world model su
 </p>
 <p align="center"><sub>Architecture overview from Figure 2 of the paper.</sub></p>
 
+## Quick start
+
+See the [NAVSIM guide](docs/navsim.md) for environment setup, data layout,
+training and evaluation commands. Supports loading the original Epona NuPlan checkpoint.
+
+```bash
+conda create -n foresight python=3.10 -y
+conda activate foresight
+bash scripts/setup_env.sh
+bash scripts/test.sh
+```
+
 ## Citation
 
 If you find this work useful, please cite:
